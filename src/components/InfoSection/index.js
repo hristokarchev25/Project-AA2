@@ -1,4 +1,19 @@
 import React from 'react';
+import {
+    Column2,
+    Img,
+    ImgWrap,
+    InfoContainer,
+    InfoWrapper,
+    InfoRow,
+    Column1,
+    TextWrapper,
+    TopLine,
+    Heading,
+    Subtitle,
+    BtnWrap,
+    
+} from './InfoElements';
 
 function InfoSection() {
     return (
@@ -16,6 +31,11 @@ function InfoSection() {
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
+                        <Column2>
+                            <ImgWrap>
+                                <Img />
+                            </ImgWrap>
+                        </Column2>
                     </InfoRow>
                 </InfoWrapper>
             </InfoContainer>
