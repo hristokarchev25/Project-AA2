@@ -16,3 +16,20 @@ export const homeObjOne = {
     primary: true,
     darkText: false
 };
+
+export const homeObjTwo = {
+    id: 'about',
+    lightBg: true,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Premium Bank',
+    headline: 'Unlimited Trans with zero fees',
+    description: 'Get access ..... text.',
+    buttonLabel: 'Get started',
+    imgStart: false,
+    img: svgOne,
+    alt: 'Car',
+    dark: true,
+    primary: true,
+    darkText: false
+};
