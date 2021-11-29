@@ -42,7 +42,7 @@ export const homeObjThree = {
     topLine: 'Unlimited Access',
     headline: 'Unlimited Trans with zero fees',
     description: 'Get access ..... text.',
-    buttonLabel: 'Learn More',
+    buttonLabel: 'Start Now',
     imgStart: true,
     img: svgOne,
     alt: 'Car',
