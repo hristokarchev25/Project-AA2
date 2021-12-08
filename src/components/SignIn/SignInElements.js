@@ -102,4 +102,5 @@ export const Text = styled.span`
     margin-top: 24px;
     color: #fff;
     font-size: 14px;
+    cursor: pointer;
 `;
