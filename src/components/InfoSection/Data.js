@@ -1,16 +1,18 @@
 import svgOne from '../../images/welcome.svg';
+import whiteLotus from '../../images/white.png';
+import orginalLotus from '../../images/blackGreen.png';
 
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Premium Bank',
+    topLine: 'Welcome!',
     headline: 'Unlimited Trans with zero fees',
     description: 'Get access ..... text.',
     buttonLabel: 'Get started',
     imgStart: false,
-    img: svgOne,
+    img: whiteLotus,
     alt: 'Car',
     dark: true,
     primary: true,
@@ -40,11 +42,11 @@ export const homeObjThree = {
     lightText: false,
     lightTextDesc: false,
     topLine: 'Unlimited Access',
-    headline: 'Unlimited Trans with zero fees',
-    description: 'Get access ..... text.',
+    headline: 'Join us, sign up',
+    description: 'Create your account and get access to our products. From top to bottom!',
     buttonLabel: 'Start Now',
     imgStart: true,
-    img: svgOne,
+    img: orginalLotus,
     alt: 'Car',
     dark: false,
     primary: false,

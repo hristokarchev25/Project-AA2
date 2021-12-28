@@ -52,8 +52,8 @@ const Footer = () => {
                             <FooterLinkItems>
                                 <FooterLinkTitle>About us</FooterLinkTitle>
                                 <FooterLink to="/signin">How it works</FooterLink>
-                                <FooterLink to="/signin">Test</FooterLink>
-                                <FooterLink to="/signin">Yoga</FooterLink>
+                                <FooterLink to="/signin">Developers</FooterLink>
+                                <FooterLink to="/signin">Contact us</FooterLink>
                                 <FooterLink to="/signin">Terms of Service</FooterLink>
                             </FooterLinkItems>
 
@@ -70,8 +70,8 @@ const Footer = () => {
 
                     <SocialMedia>
                         <SocialMediaWrap>
-                            <SocialLogo to='/' onClick={toggleHome}>alpha</SocialLogo>
-                            <WebsiteRights>alpha &copy; {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                            <SocialLogo to='/' onClick={toggleHome}>Infinity Lotus</SocialLogo>
+                            <WebsiteRights>Infinity Lotus &copy; {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink
                                     href="/"
