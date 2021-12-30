@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button } from '../ButtonElement';
+//import { Button } from '../ButtonElement';
+import { ButtonLink } from '../ButtonLink';
 
 import {
     Column2,
@@ -25,6 +26,7 @@ function InfoSection({
     headline,
     darkText,
     description,
+    buttonLink,
     buttonLabel,
     img,
     alt,
@@ -43,8 +45,8 @@ function InfoSection({
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <BtnWrap>
-                                    <Button
-                                        to="home"
+                                    <ButtonLink
+                                        to={buttonLink}
                                         smooth={true}
                                         duration={500}
                                         spy={true}
@@ -55,7 +57,7 @@ function InfoSection({
                                         dark2={dark2 ? 1 : 0}
                                     >
                                         {buttonLabel}
-                                    </Button>
+                                    </ButtonLink>
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
