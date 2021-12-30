@@ -1,5 +1,4 @@
 import React from 'react';
-import { ButtonLink } from '../ButtonLink';
 
 import {
     Column2,
@@ -13,10 +12,9 @@ import {
     TopLine,
     Heading,
     Subtitle,
-    BtnWrap,
-} from './InfoElements';
+} from './DevsElements';
 
-function InfoSection({
+function Devs({
     lightBg,
     id,
     imgStart,
@@ -25,13 +23,8 @@ function InfoSection({
     headline,
     darkText,
     description,
-    buttonLink,
-    buttonLabel,
     img,
     alt,
-    primary,
-    dark,
-    dark2
 }) {
     return (
         <>
@@ -43,21 +36,6 @@ function InfoSection({
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <BtnWrap>
-                                    <ButtonLink
-                                        to={buttonLink}
-                                        smooth="true"
-                                        duration={500}
-                                        spy="true"
-                                        exact="true"
-                                        offset={-80}
-                                        primary={primary ? 1 : 0}
-                                        dark={dark ? 1 : 0}
-                                        dark2={dark2 ? 1 : 0}
-                                    >
-                                        {buttonLabel}
-                                    </ButtonLink>
-                                </BtnWrap>
                             </TextWrapper>
                         </Column1>
                         <Column2>
@@ -72,4 +50,4 @@ function InfoSection({
     )
 }
 
-export default InfoSection;
+export default Devs;
