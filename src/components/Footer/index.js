@@ -14,8 +14,12 @@ import {
     SocialLogo,
     WebsiteRights,
     SocialIcons,
-    SocialIconLink
+    SocialIconLink,
+    FootImg
 } from './FooterElements';
+
+import white from '../../images/greenLotus.png';
+
 const Footer = () => {
 
     const toggleHome = () => {
@@ -70,7 +74,9 @@ const Footer = () => {
 
                     <SocialMedia>
                         <SocialMediaWrap>
-                            <SocialLogo to='/' onClick={toggleHome}>Infinity Lotus</SocialLogo>
+                            <SocialLogo to='/' onClick={toggleHome}>
+                                <FootImg src={white} />
+                            </SocialLogo>
                             <WebsiteRights>Infinity Lotus &copy; {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink

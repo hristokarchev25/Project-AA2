@@ -113,3 +113,8 @@ export const TextLink = styled(Link)`
     cursor: pointer;
     text-decoration: none;
 `;
+
+export const LotusImg = styled.img`
+    width: 100px;
+    object-fit: contain; 
+`;

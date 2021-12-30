@@ -25,7 +25,7 @@ export const homeObjTwo = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Unlimited Access',
+    topLine: 'Unlimited Workouts',
     headline: 'Unlimited Trans with zero fees',
     description: 'Get access ..... text.',
     buttonLink: '/signin',

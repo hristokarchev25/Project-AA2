@@ -104,3 +104,8 @@ export const Text = styled.span`
     font-size: 14px;
     cursor: pointer;
 `;
+
+export const LotusImg = styled.img`
+    width: 100px;
+    object-fit: contain; 
+`;

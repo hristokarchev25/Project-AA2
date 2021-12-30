@@ -10,8 +10,11 @@ import {
     FormLabel,
     FormInput,
     FormButton,
-    Text
+    Text,
+    LotusImg
 } from './bmiElements';
+
+import white from '../../images/white.png';
 
 function Bmi() {
 
@@ -40,7 +43,9 @@ function Bmi() {
         <>
             <Container>
                 <FormWrap>
-                    <Icon to="/">Infinity Lotus</Icon>
+                    <Icon to="/">
+                        <LotusImg src={white} />
+                    </Icon>
                     <FormContent>
                         <Form action="#">
                             <FormH1>Body Mass Index Calculator!</FormH1>

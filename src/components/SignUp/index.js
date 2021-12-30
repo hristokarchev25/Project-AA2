@@ -9,16 +9,20 @@ import {
     FormLabel,
     FormInput,
     FormButton,
-    TextLink
+    TextLink,
+    LotusImg
 } from './SignUpElements';
 
+import white from '../../images/white.png';
 
 function SignUp() {
     return (
         <>
             <Container>
                 <FormWrap>
-                    <Icon to="/">Infinity Lotus</Icon>
+                    <Icon to="/">
+                        <LotusImg src={white} />
+                    </Icon>
                     <FormContent>
                         <Form action="#">
                             <FormH1>Join Us!</FormH1>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
+import white from '../../images/white.png';
 
 import {
     Nav,
@@ -12,7 +13,8 @@ import {
     NavItem,
     NavLinks,
     NavBtn,
-    NavBtnLink
+    NavBtnLink,
+    NavImg
 } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
@@ -39,7 +41,9 @@ const Navbar = ({ toggle }) => {
             <IconContext.Provider value={{ color: '#fff' }}>
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
-                        <NavLogo to="/" onClick={toggleHome}>Infinity Lotus</NavLogo>
+                        <NavLogo to="/" onClick={toggleHome}>
+                            <NavImg src={white} />
+                        </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />
                         </MobileIcon>

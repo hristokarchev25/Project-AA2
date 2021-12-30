@@ -112,3 +112,8 @@ export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
 `;
+
+export const FootImg = styled.img`
+    width: 100px;
+    object-fit: contain; 
+`;

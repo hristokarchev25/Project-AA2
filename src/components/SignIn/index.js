@@ -10,16 +10,20 @@ import {
     FormInput,
     FormButton,
     Text,
-    TextLink
+    TextLink,
+    LotusImg
 } from './SignInElements';
 
+import white from '../../images/white.png';
 
 function SignIn() {
     return (
         <>
             <Container>
                 <FormWrap>
-                    <Icon to="/">Infinity Lotus</Icon>
+                    <Icon to="/">
+                        <LotusImg src={white} />
+                    </Icon>
                     <FormContent>
                         <Form action="#">
                             <FormH1>Sign in!</FormH1>
