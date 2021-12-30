@@ -30,8 +30,8 @@ const Footer = () => {
                         <FooterLinksWrapper>
 
                             <FooterLinkItems>
-                                <FooterLinkTitle>About us</FooterLinkTitle>
-                                <FooterLink to="/signin">How it works</FooterLink>
+                                <FooterLinkTitle>Features</FooterLinkTitle>
+                                <FooterLink to="/bmiCalculator">BMI Calculator</FooterLink>
                                 <FooterLink to="/signin">Test</FooterLink>
                                 <FooterLink to="/signin">Yoga</FooterLink>
                                 <FooterLink to="/signin">Terms of Service</FooterLink>
@@ -74,35 +74,35 @@ const Footer = () => {
                             <WebsiteRights>Infinity Lotus &copy; {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink
-                                    href="/"
+                                    href="https://bg-bg.facebook.com/"
                                     target="_blank"
                                     aria-label="Facebook">
                                     <FaFacebook />
                                 </SocialIconLink>
 
                                 <SocialIconLink
-                                    href="/"
+                                    href="https://www.instagram.com/"
                                     target="_blank"
                                     aria-label="Instagram">
                                     <FaInstagram />
                                 </SocialIconLink>
 
                                 <SocialIconLink
-                                    href="/"
+                                    href="https://www.youtube.com/"
                                     target="_blank"
                                     aria-label="YouTube">
                                     <FaYoutube />
                                 </SocialIconLink>
 
                                 <SocialIconLink
-                                    href="/"
+                                    href="https://twitter.com/?lang=bg"
                                     target="_blank"
                                     aria-label="Twitter">
                                     <FaTwitter />
                                 </SocialIconLink>
 
                                 <SocialIconLink
-                                    href="/"
+                                    href="https://github.com/hristokarchev25/Project-AA2"
                                     target="_blank"
                                     aria-label="GitHub">
                                     <FaGithub />
