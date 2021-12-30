@@ -9,12 +9,11 @@ import {
     FormLabel,
     FormInput,
     FormButton,
-    Text,
     TextLink
-} from './SignInElements';
+} from './SignUpElements';
 
 
-function SignIn() {
+function SignUp() {
     return (
         <>
             <Container>
@@ -22,14 +21,15 @@ function SignIn() {
                     <Icon to="/">Infinity Lotus</Icon>
                     <FormContent>
                         <Form action="#">
-                            <FormH1>Sign in!</FormH1>
+                            <FormH1>Join Us!</FormH1>
                             <FormLabel htmlFor='email'>Email</FormLabel>
                             <FormInput type='email' required />
                             <FormLabel htmlFor='password'>Password</FormLabel>
                             <FormInput type='password' required />
+                            <FormLabel htmlFor='password'>Repeat Password</FormLabel>
+                            <FormInput type='password' required />
                             <FormButton type='submit'>Continue</FormButton>
-                            <Text>Forgot your password?</Text>
-                            <TextLink to="/signup">Don't have an account?</TextLink>
+                            <TextLink to="/signin">Already have an account?</TextLink>
                         </Form>
                     </FormContent>
                 </FormWrap>
@@ -38,4 +38,4 @@ function SignIn() {
     )
 }
 
-export default SignIn;
+export default SignUp;
