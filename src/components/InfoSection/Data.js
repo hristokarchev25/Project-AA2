@@ -1,4 +1,4 @@
-import svgOne from '../../images/welcome.svg';
+import svgOne from '../../images/train.svg';
 import whiteLotus from '../../images/white.png';
 import orginalLotus from '../../images/blackGreen.png';
 

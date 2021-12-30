@@ -1,5 +1,8 @@
 import React from 'react';
-import IconOne from '../../images/App.png'
+import IconOne from '../../images/prot3.png'
+import IconTwo from '../../images/yogaC3.png'
+import IconThree from '../../images/gym.png'
+
 import {
     ServicesContainer,
     ServicesH1,
@@ -19,20 +22,20 @@ const Services = () => {
                 <ServicesWrapper>
                     <ServicesCard>
                         <ServicesIcon src={IconOne} />
-                        <ServicesH2>Reduce Expenses</ServicesH2>
-                        <ServicesP>loremadawsfdafafafafaffaf</ServicesP>
+                        <ServicesH2>Protein Powder</ServicesH2>
+                        <ServicesP>Different types of protein powder!</ServicesP>
                     </ServicesCard>
 
                     <ServicesCard>
-                        <ServicesIcon src={IconOne} />
-                        <ServicesH2>Head2</ServicesH2>
-                        <ServicesP>loremadawsfdafafafafaffaf</ServicesP>
+                        <ServicesIcon src={IconTwo} />
+                        <ServicesH2>Yoga Mats</ServicesH2>
+                        <ServicesP>The best yoga mats of 2022!</ServicesP>
                     </ServicesCard>
 
                     <ServicesCard>
-                        <ServicesIcon src={IconOne} />
-                        <ServicesH2>Head3</ServicesH2>
-                        <ServicesP>loremadawsfdafafafafaffaf</ServicesP>
+                        <ServicesIcon src={IconThree} />
+                        <ServicesH2>Gym Equipment</ServicesH2>
+                        <ServicesP>The newest pieces of workout equipment for your home or gym!</ServicesP>
                     </ServicesCard>
                 </ServicesWrapper>
             </ServicesContainer>
