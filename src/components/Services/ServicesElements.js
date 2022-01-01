@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const ServicesContainer = styled.div`
     height: 800px;
@@ -47,6 +48,7 @@ export const ServicesCard = styled.div`
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 
     &:hover {
         transform: scale(1.02);
@@ -79,4 +81,11 @@ export const ServicesH2 = styled.h2`
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
+    margin-bottom: 10px;
+`;
+
+export const LinkP = styled(LinkR)`
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
 `;

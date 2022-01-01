@@ -5,6 +5,7 @@ import bmiPage from './pages/bmi';
 import devsPage from './pages/devs';
 import SigninPage from './pages/signin';
 import SignupPage from './pages/signup';
+import workoutsPage from './pages/workouts';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/signup" component={SignupPage} exact />
       <Route path="/bmiCalculator" component={bmiPage} exact />
       <Route path="/devs" component={devsPage} exact />
+      <Route path="/workouts" component={workoutsPage} exact />
     </Switch>
   );
 }
