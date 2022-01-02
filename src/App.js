@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages';
 import bmiPage from './pages/bmi';
 import devsPage from './pages/devs';
+import Shop from './pages/shop';
 import SigninPage from './pages/signin';
 import SignupPage from './pages/signup';
 import workoutsPage from './pages/workouts';
@@ -16,6 +17,7 @@ function App() {
       <Route path="/bmiCalculator" component={bmiPage} exact />
       <Route path="/devs" component={devsPage} exact />
       <Route path="/workouts" component={workoutsPage} exact />
+      <Route path="/shop" component={Shop} exact />
     </Switch>
   );
 }

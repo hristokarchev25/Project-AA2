@@ -36,9 +36,9 @@ const Footer = () => {
                             <FooterLinkItems>
                                 <FooterLinkTitle>Features</FooterLinkTitle>
                                 <FooterLink to="/bmiCalculator">BMI Calculator</FooterLink>
-                                <FooterLink to="/signin">Test</FooterLink>
-                                <FooterLink to="/signin">Yoga</FooterLink>
-                                <FooterLink to="/signin">Terms of Service</FooterLink>
+                                <FooterLink to="/workouts">Workouts</FooterLink>
+                                <FooterLink to="/workouts">Diets</FooterLink>
+                                <FooterLink to="/shop">Shop</FooterLink>
                             </FooterLinkItems>
 
                             <FooterLinkItems>
@@ -55,7 +55,7 @@ const Footer = () => {
 
                             <FooterLinkItems>
                                 <FooterLinkTitle>About us</FooterLinkTitle>
-                                <FooterLink to="/signin">How it works</FooterLink>
+                                <FooterLink to="/signin">Our mission</FooterLink>
                                 <FooterLink to="/devs">Developers</FooterLink>
                                 <FooterLink to="/signin">Contact us</FooterLink>
                                 <FooterLink to="/signin">Terms of Service</FooterLink>
