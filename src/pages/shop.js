@@ -4,6 +4,7 @@ import ShopNav from '../components/Navbar/shopNav';
 import ShopSidebar from '../components/Sidebar/ShopSidebar';
 import ScrollToTop from '../components/ScrollToTop';
 import Proteins from '../components/Services/proteins';
+import Mats from '../components/Services/mats';
 
 import Services from '../components/Services';
 
@@ -19,7 +20,7 @@ function Shop() {
             <ShopSidebar isOpen={isOpen} toggle={toggle} />
             <ShopNav toggle={toggle} />
             <Proteins />
-            <Services />
+            <Mats />
             <Services />
             <Footer />
         </>

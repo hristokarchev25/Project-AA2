@@ -17,7 +17,7 @@ const Proteins = () => {
     return (
         <>
             <ServicesContainer id="protein">
-                <ServicesH1>Protein Powder Collection</ServicesH1>
+                <ServicesH1>Protein Collection</ServicesH1>
                 <ServicesWrapper>
                     <ServicesCard>
                         <ServicesIcon src={shopOne} />

@@ -3,8 +3,6 @@ import IconOne from '../../images/prot3.png';
 import IconTwo from '../../images/yogaC3.png';
 import IconThree from '../../images/gym.png';
 
-//import shopTwo from '../../images/shop2.jpg';
-
 import {
     ServicesContainer,
     ServicesH1,
