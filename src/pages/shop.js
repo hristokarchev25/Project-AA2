@@ -5,8 +5,8 @@ import ShopSidebar from '../components/Sidebar/ShopSidebar';
 import ScrollToTop from '../components/ScrollToTop';
 import Proteins from '../components/Services/proteins';
 import Mats from '../components/Services/mats';
+import Gym from '../components/Services/gym';
 
-import Services from '../components/Services';
 
 function Shop() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +21,7 @@ function Shop() {
             <ShopNav toggle={toggle} />
             <Proteins />
             <Mats />
-            <Services />
+            <Gym />
             <Footer />
         </>
     )
