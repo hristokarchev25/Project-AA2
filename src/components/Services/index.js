@@ -3,7 +3,6 @@ import IconOne from '../../images/prot3.png';
 import IconTwo from '../../images/yogaC3.png';
 import IconThree from '../../images/gym.png';
 
-//import shopOne from '../../images/shop1.jpg';
 //import shopTwo from '../../images/shop2.jpg';
 
 import {
@@ -50,4 +49,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Services;
