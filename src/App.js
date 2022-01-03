@@ -1,6 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Home from './pages';
+import aboutPage from './pages/about';
 import bmiPage from './pages/bmi';
 import contactUsPage from './pages/contactUs';
 import devsPage from './pages/devs';
@@ -21,6 +22,7 @@ function App() {
       <Route path="/workouts" component={workoutsPage} exact />
       <Route path="/shop" component={Shop} exact />
       <Route path="/contactUs" component={contactUsPage} exact />
+      <Route path="/about" component={aboutPage} exact />
     </Switch>
   );
 }

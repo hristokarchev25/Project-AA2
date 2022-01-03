@@ -19,7 +19,7 @@ import {
     FooterHref
 } from './FooterElements';
 
-import white from '../../images/greenLotus.png';
+import white from '../../images/white.png';
 
 const Footer = () => {
 
@@ -39,7 +39,7 @@ const Footer = () => {
                                 <FooterLink to="/bmiCalculator">BMI Calculator</FooterLink>
                                 <FooterLink to="/workouts">Workouts</FooterLink>
                                 <FooterLink to="/workouts">Diets</FooterLink>
-                                <FooterLink to="/shop">Shop</FooterLink>
+                                <FooterLink to="/">Home</FooterLink>
                             </FooterLinkItems>
 
                             <FooterLinkItems>
@@ -56,7 +56,7 @@ const Footer = () => {
 
                             <FooterLinkItems>
                                 <FooterLinkTitle>About us</FooterLinkTitle>
-                                <FooterLink to="/signin">Our mission</FooterLink>
+                                <FooterLink to="/about">Our mission</FooterLink>
                                 <FooterLink to="/devs">Developers</FooterLink>
                                 <FooterLink to="/contactUs">Contact us</FooterLink>
                                 <FooterLink to="/signin">Terms of Service</FooterLink>
