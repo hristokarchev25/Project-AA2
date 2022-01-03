@@ -54,7 +54,7 @@ const SignUp = () => {
                             <FormInput type='password' id="password" value={password} onChange={(e) => { setPassword(e.target.value) }} name="password" placeholder="Password must be more than 6 symbols" required />
 
                             <FormLabel htmlFor='password'>Repeat Password</FormLabel>
-                            <FormInput type='password' required />
+                            <FormInput type='password' placeholder="Passwords must match" required />
 
                             <FormButton type='submit'>Continue</FormButton>
                             <TextLink to="/signin">Already have an account?</TextLink>
