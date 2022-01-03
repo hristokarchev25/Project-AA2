@@ -18,7 +18,7 @@ const Gym = () => {
     return (
         <>
             <ServicesContainer id="gym">
-                <ServicesH1>Schwinn IC8 Indoor Cycle</ServicesH1>
+                <ServicesH1>Gym Equipment Collection</ServicesH1>
                 <ServicesWrapper>
                     <ServicesCard>
                         <ServicesIcon src={shopOne} />

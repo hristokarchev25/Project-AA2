@@ -15,7 +15,8 @@ import {
     WebsiteRights,
     SocialIcons,
     SocialIconLink,
-    FootImg
+    FootImg,
+    FooterHref
 } from './FooterElements';
 
 import white from '../../images/greenLotus.png';
@@ -42,11 +43,11 @@ const Footer = () => {
                             </FooterLinkItems>
 
                             <FooterLinkItems>
-                                <FooterLinkTitle>Social Media</FooterLinkTitle>
-                                <FooterLink to="/signin">Instagram</FooterLink>
-                                <FooterLink to="/signin">Facebook</FooterLink>
-                                <FooterLink to="/signin">Twitter</FooterLink>
-                                <FooterLink to="/signin">GitHub</FooterLink>
+                                <FooterLinkTitle>Store</FooterLinkTitle>
+                                <FooterLink to="/shop">Protein</FooterLink>
+                                <FooterLink to="/shop">Yoga Mats</FooterLink>
+                                <FooterLink to="/shop">Gym Equipment: home</FooterLink>
+                                <FooterLink to="/shop">Gym Equipment: gym</FooterLink>
                             </FooterLinkItems>
 
                         </FooterLinksWrapper>
@@ -57,16 +58,21 @@ const Footer = () => {
                                 <FooterLinkTitle>About us</FooterLinkTitle>
                                 <FooterLink to="/signin">Our mission</FooterLink>
                                 <FooterLink to="/devs">Developers</FooterLink>
-                                <FooterLink to="/signin">Contact us</FooterLink>
+                                <FooterLink to="/contactUs">Contact us</FooterLink>
                                 <FooterLink to="/signin">Terms of Service</FooterLink>
                             </FooterLinkItems>
 
                             <FooterLinkItems>
-                                <FooterLinkTitle>Social Media</FooterLinkTitle>
-                                <FooterLink to="/signin">Instagram</FooterLink>
-                                <FooterLink to="/signin">Facebook</FooterLink>
-                                <FooterLink to="/signin">Twitter</FooterLink>
-                                <FooterLink to="/signin">GitHub</FooterLink>
+                                <FooterLinkTitle>Useful links</FooterLinkTitle>
+                                <FooterHref
+                                    href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-benefits-of-yoga"
+                                    target="_blank">Benefits of yoga</FooterHref>
+                                <FooterHref href="https://www.webmd.com/balance/stress-management/stress-relief-breathing-techniques"
+                                    target="_blank">Breathing</FooterHref>
+                                <FooterHref href="https://www.medicalnewstoday.com/articles/245259"
+                                    target="_blank">Healthy foods</FooterHref>
+                                <FooterHref href="https://www.healthline.com/health/exercise-fitness/rest-day"
+                                    target="_blank">Rest days</FooterHref>
                             </FooterLinkItems>
 
                         </FooterLinksWrapper>
