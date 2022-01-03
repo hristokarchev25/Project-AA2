@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import Home from './pages';
 import aboutPage from './pages/about';
@@ -9,6 +9,8 @@ import Shop from './pages/shop';
 import SigninPage from './pages/signin';
 import SignupPage from './pages/signup';
 import workoutsPage from './pages/workouts';
+
+import { auth } from './utils/firebase';
 
 
 function App() {
@@ -23,6 +25,10 @@ function App() {
       <Route path="/shop" component={Shop} exact />
       <Route path="/contactUs" component={contactUsPage} exact />
       <Route path="/about" component={aboutPage} exact />
+      <Route path="/logout" render={props => {
+        auth.signOut();
+        return <Redirect to="/" />
+      }} />
     </Switch>
   );
 }

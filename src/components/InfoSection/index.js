@@ -31,7 +31,8 @@ function InfoSection({
     alt,
     primary,
     dark,
-    dark2
+    dark2,
+    isAuth
 }) {
     return (
         <>
@@ -43,7 +44,9 @@ function InfoSection({
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <BtnWrap>
+                                {isAuth && buttonLabel === "Start Now" ? (
+                                    <BtnWrap></BtnWrap>
+                                ) : (<BtnWrap>
                                     <ButtonLink
                                         to={buttonLink}
                                         smooth="true"
@@ -57,7 +60,7 @@ function InfoSection({
                                     >
                                         {buttonLabel}
                                     </ButtonLink>
-                                </BtnWrap>
+                                </BtnWrap>)}
                             </TextWrapper>
                         </Column1>
                         <Column2>

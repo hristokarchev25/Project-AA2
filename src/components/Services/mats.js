@@ -17,7 +17,7 @@ const Mats = () => {
     return (
         <>
             <ServicesContainer id="mats">
-                <ServicesH1>Yoga Mats Collection</ServicesH1>
+                <ServicesH1>Yoga Mats</ServicesH1>
                 <ServicesWrapper>
                     <ServicesCard>
                         <ServicesIcon src={shopTwo} />

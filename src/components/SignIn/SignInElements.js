@@ -95,6 +95,12 @@ export const FormButton = styled.button`
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+
+    &:hover {
+        transition: all 0.4s ease-in-out;
+        background: #fff;
+        color: black;
+    }
 `;
 
 export const Text = styled.span`

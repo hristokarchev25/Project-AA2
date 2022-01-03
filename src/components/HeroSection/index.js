@@ -13,7 +13,7 @@ import {
     ArrowRight
 } from './HeroElements';
 
-function HeroSection() {
+function HeroSection({ isAuth, email }) {
     const [hover, setHover] = useState(false);
 
     const onHover = () => {
@@ -28,18 +28,27 @@ function HeroSection() {
             </HeroBG>
             <HeroContent>
                 <HeroH1>Tell The Vision</HeroH1>
-                <HeroP>
-                    Sign up for a new account today!
-                </HeroP>
-                <HeroBtnWrapper>
-                    <Button to="signup" onMouseEnter={onHover}
-                        onMouseLeave={onHover}
-                        primary="true"
-                        dark="true"
-                    >
-                        Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-                    </Button>
-                </HeroBtnWrapper>
+                
+                {isAuth
+                    ? (
+                        <HeroP>Happy to have you {email}</HeroP>
+                    ) : (
+                        <>
+                            <HeroP>
+                                Sign up for a new account today!
+                            </HeroP>
+                            <HeroBtnWrapper>
+                                <Button to="signup" onMouseEnter={onHover}
+                                    onMouseLeave={onHover}
+                                    primary="true"
+                                    dark="true"
+                                >
+                                    Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+                                </Button>
+                            </HeroBtnWrapper>
+                        </>
+                    )}
+
             </HeroContent>
         </HeroContainer>
     )

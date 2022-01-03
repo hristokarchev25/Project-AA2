@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 import {
     Container,
     FormWrap,
@@ -10,12 +11,31 @@ import {
     FormInput,
     FormButton,
     TextLink,
-    LotusImg
+    LotusImg,
 } from './SignUpElements';
 
 import white from '../../images/white.png';
+import { auth } from '../../utils/firebase';
 
-function SignUp() {
+
+const SignUp = () => {
+    let history = useHistory();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const onRegisterSubmitHandler = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        auth.createUserWithEmailAndPassword(email, password)
+            .then(userCredential => {
+                history.push('/signin');
+            })
+            .catch(err => console.log(err));
+    }
+
+
     return (
         <>
             <Container>
@@ -24,14 +44,18 @@ function SignUp() {
                         <LotusImg src={white} />
                     </Icon>
                     <FormContent>
-                        <Form action="#">
+                        <Form onSubmit={onRegisterSubmitHandler}>
                             <FormH1>Join Us!</FormH1>
+
                             <FormLabel htmlFor='email'>Email</FormLabel>
-                            <FormInput type='email' required />
+                            <FormInput type='email' id='email' value={email} onChange={(e) => { setEmail(e.target.value) }} name="email" required />
+
                             <FormLabel htmlFor='password'>Password</FormLabel>
-                            <FormInput type='password' required />
+                            <FormInput type='password' id="password" value={password} onChange={(e) => { setPassword(e.target.value) }} name="password" required />
+
                             <FormLabel htmlFor='password'>Repeat Password</FormLabel>
                             <FormInput type='password' required />
+
                             <FormButton type='submit'>Continue</FormButton>
                             <TextLink to="/signin">Already have an account?</TextLink>
                         </Form>
@@ -40,6 +64,6 @@ function SignUp() {
             </Container>
         </>
     )
-}
+};
 
 export default SignUp;

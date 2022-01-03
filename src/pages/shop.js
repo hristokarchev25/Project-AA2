@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../components/Footer';
 import ShopNav from '../components/Navbar/shopNav';
 import ShopSidebar from '../components/Sidebar/ShopSidebar';
@@ -7,8 +7,16 @@ import Proteins from '../components/Services/proteins';
 import Mats from '../components/Services/mats';
 import Gym from '../components/Services/gym';
 
+import { auth } from '../utils/firebase';
 
 function Shop() {
+
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        auth.onAuthStateChanged(setUser);
+    }, []);
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -17,8 +25,8 @@ function Shop() {
     return (
         <>
             <ScrollToTop />
-            <ShopSidebar isOpen={isOpen} toggle={toggle} />
-            <ShopNav toggle={toggle} />
+            <ShopSidebar isOpen={isOpen} toggle={toggle} email={user?.email} isAuth={Boolean(user)} />
+            <ShopNav toggle={toggle} email={user?.email} isAuth={Boolean(user)} />
             <Proteins />
             <Mats />
             <Gym />

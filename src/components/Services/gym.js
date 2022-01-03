@@ -18,7 +18,7 @@ const Gym = () => {
     return (
         <>
             <ServicesContainer id="gym">
-                <ServicesH1>Gym Equipment Collection</ServicesH1>
+                <ServicesH1>Gym Equipment</ServicesH1>
                 <ServicesWrapper>
                     <ServicesCard>
                         <ServicesIcon src={shopOne} />

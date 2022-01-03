@@ -11,7 +11,7 @@ import {
 } from './SidebarElements';
 
 
-function Sidebar({ isOpen, toggle }) {
+function Sidebar({ isOpen, toggle, email, isAuth }) {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -22,11 +22,28 @@ function Sidebar({ isOpen, toggle }) {
                     <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
                     <SidebarLink to="discover" onClick={toggle}>Discover</SidebarLink>
                     <SidebarLink to="services" onClick={toggle}>Services</SidebarLink>
-                    <SidebarLink to="signup" onClick={toggle}>Sign Up</SidebarLink>
+
+                    {!isAuth
+                        ? (
+                            <SidebarLink to="signup" onClick={toggle}>Sign Up</SidebarLink>
+                        ) : (
+                            <SidebarLink>Welcome, {email}</SidebarLink>
+                        )}
+
                 </SidebarMenu>
-                <SideBtnWrap>
-                    <SidebarRoute to="/signin">Sign In</SidebarRoute>
-                </SideBtnWrap>
+
+                {isAuth
+                    ? (
+                        <SideBtnWrap>
+                            <SidebarRoute to="/logout">Log out</SidebarRoute>
+                        </SideBtnWrap>
+                    ) : (
+                        <SideBtnWrap>
+                            <SidebarRoute to="/signin">Sign In</SidebarRoute>
+                        </SideBtnWrap>
+                    )}
+
+
             </SidebarWrapper>
         </SidebarContainer>
     );

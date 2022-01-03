@@ -17,7 +17,7 @@ import {
     NavImg
 } from './NavbarElements';
 
-const ShopNav = ({ toggle }) => {
+const ShopNav = ({ toggle, isAuth, email }) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
@@ -79,20 +79,26 @@ const ShopNav = ({ toggle }) => {
                                 >Gym Equipment</NavLinks>
                             </NavItem>
 
-                            {/* <NavItem>
-                                <NavLinks
-                                    to="gym"
-                                    smooth={true}
-                                    duration={700}
-                                    spy={true}
-                                    exact='true'
-                                    offset={-80}
-                                >Gym Equipment</NavLinks>
-                            </NavItem> */}
+                            {!isAuth
+                            ? (<NavItem>
+                                <NavLinks></NavLinks>
+                            </NavItem>) : (
+                                <NavItem>
+                                    <NavLinks>Welcome, {email}</NavLinks>
+                                </NavItem>
+                            )}
+
                         </NavMenu>
-                        <NavBtn>
-                            <NavBtnLink to="/signin">Log out</NavBtnLink>
-                        </NavBtn>
+                        {isAuth
+                            ? (
+                                <NavBtn>
+                                    <NavBtnLink to="/logout">Log out</NavBtnLink>
+                                </NavBtn>
+                            ) : (
+                                <NavBtn>
+                                    <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                                </NavBtn>
+                            )}
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>

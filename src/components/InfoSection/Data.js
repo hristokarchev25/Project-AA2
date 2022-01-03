@@ -13,7 +13,7 @@ export const homeObjOne = {
     headline: 'The healthiest app on the internet!',
     description: 'About our mission.',
     buttonLink: '/about',
-    buttonLabel: 'Read more',
+    buttonLabel: 'Read here',
     imgStart: false,
     img: whiteLotus,
     alt: 'white lotus',

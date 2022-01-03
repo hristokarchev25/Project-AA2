@@ -17,7 +17,7 @@ import {
     NavImg
 } from './NavbarElements';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, email, isAuth }) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
@@ -78,7 +78,8 @@ const Navbar = ({ toggle }) => {
                                     offset={-80}
                                 >Services</NavLinks>
                             </NavItem>
-                            <NavItem>
+                            {!isAuth
+                            ? (<NavItem>
                                 <NavLinks
                                     to="signup"
                                     smooth={true}
@@ -87,14 +88,27 @@ const Navbar = ({ toggle }) => {
                                     exact='true'
                                     offset={-80}
                                 >Sign Up</NavLinks>
-                            </NavItem>
+                            </NavItem>) : (
+                                <NavItem>
+                                    <NavLinks>Welcome, {email}</NavLinks>
+                                </NavItem>
+                            )}
+                            
                         </NavMenu>
-                        <NavBtn>
-                            <NavBtnLink to="/signin">Sign In</NavBtnLink>
-                        </NavBtn>
+                        {isAuth
+                            ? (
+                                <NavBtn>
+                                    <NavBtnLink to="/logout">Log out</NavBtnLink>
+                                </NavBtn>
+                            ) : (
+                                <NavBtn>
+                                    <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                                </NavBtn>
+                            )}
+
                     </NavbarContainer>
                 </Nav>
-            </IconContext.Provider>
+            </IconContext.Provider >
         </>
     );
 };

@@ -10,7 +10,7 @@ import {
     SidebarRoute
 } from './SidebarElements';
 
-function ShopSidebar({ isOpen, toggle }) {
+function ShopSidebar({ isOpen, toggle, isAuth }) {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -21,11 +21,17 @@ function ShopSidebar({ isOpen, toggle }) {
                     <SidebarLink to="protein" onClick={toggle}>Protein Powder</SidebarLink>
                     <SidebarLink to="mats" onClick={toggle}>Yoga Mats</SidebarLink>
                     <SidebarLink to="gym" onClick={toggle}>Gym Equipment</SidebarLink>
-                    {/* <SidebarLink to="signup" onClick={toggle}>Sign Up</SidebarLink> */}
                 </SidebarMenu>
-                <SideBtnWrap>
-                    <SidebarRoute to="/signin">Log out</SidebarRoute>
-                </SideBtnWrap>
+                {isAuth
+                    ? (
+                        <SideBtnWrap>
+                            <SidebarRoute to="/logout">Log out</SidebarRoute>
+                        </SideBtnWrap>
+                    ) : (
+                        <SideBtnWrap>
+                            <SidebarRoute to="/signin">Sign In</SidebarRoute>
+                        </SideBtnWrap>
+                    )}
             </SidebarWrapper>
         </SidebarContainer>
     );
