@@ -48,10 +48,10 @@ const SignUp = () => {
                             <FormH1>Join Us!</FormH1>
 
                             <FormLabel htmlFor='email'>Email</FormLabel>
-                            <FormInput type='email' id='email' value={email} onChange={(e) => { setEmail(e.target.value) }} name="email" required />
+                            <FormInput type='email' id='email' value={email} onChange={(e) => { setEmail(e.target.value) }} name="email" placeholder="Type your email" required />
 
                             <FormLabel htmlFor='password'>Password</FormLabel>
-                            <FormInput type='password' id="password" value={password} onChange={(e) => { setPassword(e.target.value) }} name="password" required />
+                            <FormInput type='password' id="password" value={password} onChange={(e) => { setPassword(e.target.value) }} name="password" placeholder="Password must be more than 6 symbols" required />
 
                             <FormLabel htmlFor='password'>Repeat Password</FormLabel>
                             <FormInput type='password' required />
