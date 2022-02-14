@@ -1,5 +1,4 @@
 import ico from '../../images/ico.jpg';
-import presko from '../../images/presko.jpg';
 
 export const icoTheObj = {
     id: 'ico',
@@ -17,22 +16,4 @@ export const icoTheObj = {
     dark: true,
     primary: true,
     darkText: false
-};
-
-export const preskoTheObj = {
-    id: 'presko',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Developers',
-    headline: 'Preslav Siderov',
-    description: 'From Dobrich. Also studying at University of Economics Varna. He loves his Mazda and also JS lover!',
-    buttonLink: 'https://github.com/PreslavSiderov',
-    buttonLabel: 'GitHub',
-    imgStart: true,
-    img: presko,
-    alt: 'just presko',
-    dark: false,
-    primary: false,
-    darkText: true
 };
