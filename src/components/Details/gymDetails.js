@@ -46,7 +46,7 @@ function GymDetails() {
                                 <Subtitle darkText={false}>{gym.description}</Subtitle>
                                 <BtnWrap>
                                     <BtnHref
-                                        href="#"
+                                        href={gym.link}
                                         smooth="true"
                                         duration={500}
                                         spy="true"

@@ -46,7 +46,7 @@ function MatsDetails() {
                                 <Subtitle darkText={false}>{mat.description}</Subtitle>
                                 <BtnWrap>
                                     <BtnHref
-                                        href="#"
+                                        href={mat.link}
                                         smooth="true"
                                         duration={500}
                                         spy="true"

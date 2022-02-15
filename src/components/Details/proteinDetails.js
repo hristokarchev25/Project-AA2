@@ -46,7 +46,7 @@ function ProteinDetails() {
                                 <Subtitle darkText={false}>{protein.description}</Subtitle>
                                 <BtnWrap>
                                     <BtnHref
-                                        href="#"
+                                        href={protein.link}
                                         smooth="true"
                                         duration={500}
                                         spy="true"
