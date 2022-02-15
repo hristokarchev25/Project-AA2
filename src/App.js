@@ -24,7 +24,7 @@ function App() {
       <Route path="/devs" component={devsPage} exact />
       <Route path="/workouts" component={workoutsPage} exact />
       <Route path="/shop" component={Shop} exact />
-      <Route path="/shop/details/:proteinId" component={proteinDetailsPage} exact />
+      <Route path="/shop/details/proteins/:proteinId" component={proteinDetailsPage} exact />
       <Route path="/contactUs" component={contactUsPage} exact />
       <Route path="/about" component={aboutPage} exact />
       <Route path="/logout" render={props => {

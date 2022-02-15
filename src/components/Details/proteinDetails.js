@@ -26,7 +26,7 @@ function ProteinDetails() {
     useEffect(() => {
         let path = window.location.pathname;
         let splited = path.split("/");
-        let id = splited[3];
+        let id = splited[4];
         db.collection("proteins")
             .doc(id)
             .get()

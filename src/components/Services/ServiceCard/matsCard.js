@@ -5,8 +5,7 @@ import {
     LinkP
 } from './SCelements';
 
-
-const ServiceCard = ({
+const MatsCard = ({
     id,
     name,
     image
@@ -16,10 +15,10 @@ const ServiceCard = ({
             <ServicesCard>
                 <ServicesIcon src={image} />
                 <ServicesH2>{name}</ServicesH2>
-                <LinkP to={`/shop/details/proteins/${id}`}>Details</LinkP>
+                <LinkP to={`/shop/details/mats/${id}`}>Details</LinkP>
             </ServicesCard>
         </>
     )
 }
 
-export default ServiceCard;
+export default MatsCard;
