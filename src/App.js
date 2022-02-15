@@ -11,6 +11,7 @@ import SignupPage from './pages/signup';
 import workoutsPage from './pages/workouts';
 import proteinDetailsPage from './pages/proteinDetailsPage';
 import matsDetailsPage from './pages/matsDetailsPage';
+import gymDetailsPage from './pages/gymDetailsPage';
 
 import { auth } from './utils/firebase';
 
@@ -27,6 +28,7 @@ function App() {
       <Route path="/shop" component={Shop} exact />
       <Route path="/shop/details/proteins/:proteinId" component={proteinDetailsPage} exact />
       <Route path="/shop/details/mats/:matId" component={matsDetailsPage} exact />
+      <Route path="/shop/details/gym/:gymId" component={gymDetailsPage} exact />
       <Route path="/contactUs" component={contactUsPage} exact />
       <Route path="/about" component={aboutPage} exact />
       <Route path="/logout" render={props => {
