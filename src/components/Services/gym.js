@@ -1,26 +1,50 @@
-import shopOne from '../../images/gym1.jpg';
+/* import shopOne from '../../images/gym1.jpg';
 import shopTwo from '../../images/gym2.jpg';
-import shopThree from '../../images/gym3.jpg';
+import shopThree from '../../images/gym3.jpg'; */
+import React, { Component } from 'react';
+import GymCard from './ServiceCard/gymCard';
+import { db } from '../../utils/firebase';
 
 import {
     ServicesContainer,
     ServicesH1,
-    ServicesWrapper,
-    ServicesCard,
-    ServicesIcon,
-    ServicesH2,
-    ServicesP,
-    LinkP
+    ServicesWrapper
 } from './ServicesElements';
 
 
-const Gym = () => {
-    return (
-        <>
-            <ServicesContainer id="gym">
-                <ServicesH1>Gym Equipment</ServicesH1>
-                <ServicesWrapper>
-                    <ServicesCard>
+class Gym extends Component {
+    state = {
+        gym: null
+    }
+
+    componentDidMount() {
+        db.collection('gym')
+            .get()
+            .then(snapshot => {
+                const gym = [];
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    gym.push({ ...data, id: doc.id });
+                })
+                this.setState({ gym: gym });
+            })
+            .catch(err => console.log(err));
+    }
+
+    render() {
+        return (
+            <>
+                <ServicesContainer id="gym">
+                    <ServicesH1>Gym Equipment</ServicesH1>
+                    <ServicesWrapper>
+                        {
+                            this.state.gym && this.state.gym.map((gymMachine, index) => {
+                                return (
+                                    <GymCard key={index} {...gymMachine} />
+                                )
+                            })
+                        }
+                        {/*  <ServicesCard>
                         <ServicesIcon src={shopOne} />
                         <ServicesH2>Schwinn IC8 Indoor Cycle</ServicesH2>
                         <ServicesP>1400 BGN!</ServicesP>
@@ -39,11 +63,12 @@ const Gym = () => {
                         <ServicesH2>Taurus T9.9 Light Treadmill</ServicesH2>
                         <ServicesP>5000 BGN!</ServicesP>
                         <LinkP to="/#">Buy</LinkP>
-                    </ServicesCard>
-                </ServicesWrapper>
-            </ServicesContainer>
-        </>
-    )
+                    </ServicesCard> */}
+                    </ServicesWrapper>
+                </ServicesContainer>
+            </>
+        )
+    }
 }
 
 export default Gym;
