@@ -10,6 +10,7 @@ import SigninPage from './pages/signin';
 import SignupPage from './pages/signup';
 import workoutsPage from './pages/workouts';
 import proteinDetailsPage from './pages/proteinDetailsPage';
+import matsDetailsPage from './pages/matsDetailsPage';
 
 import { auth } from './utils/firebase';
 
@@ -25,6 +26,7 @@ function App() {
       <Route path="/workouts" component={workoutsPage} exact />
       <Route path="/shop" component={Shop} exact />
       <Route path="/shop/details/proteins/:proteinId" component={proteinDetailsPage} exact />
+      <Route path="/shop/details/mats/:matId" component={matsDetailsPage} exact />
       <Route path="/contactUs" component={contactUsPage} exact />
       <Route path="/about" component={aboutPage} exact />
       <Route path="/logout" render={props => {
