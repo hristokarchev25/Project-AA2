@@ -16,6 +16,7 @@ import {
     Subtitle,
     BtnWrap,
     BtnHref,
+    BtnLink
 } from './detailsElements';
 
 function ProteinDetails() {
@@ -51,13 +52,28 @@ function ProteinDetails() {
                                         spy="true"
                                         exact="true"
                                         offset={-80}
-                                        primary={true}
-                                        dark={true}
-                                        dark2={true}
+                                        primary="true"
+                                        dark="true"
+                                        dark2="true"
                                         target="_blank"
                                     >
                                        Buy for {protein.price}
                                     </BtnHref>
+                                </BtnWrap>
+                                <BtnWrap>
+                                    <BtnLink
+                                        to="/shop"
+                                        smooth="true"
+                                        duration={500}
+                                        spy="true"
+                                        exact="true"
+                                        offset={-80}
+                                        primary="true"
+                                        dark="true"
+                                        dark2="true"
+                                    >
+                                       Back
+                                    </BtnLink>
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
