@@ -25,21 +25,21 @@ const Services = () => {
                         <ServicesIcon src={IconOne} />
                         <ServicesH2>Protein Powder</ServicesH2>
                         <ServicesP>Different types of protein powder!</ServicesP>
-                        <LinkP to="/shop">Read More</LinkP>
+                        <LinkP to="/shop">Read More...</LinkP>
                     </ServicesCard>
 
                     <ServicesCard>
                         <ServicesIcon src={IconTwo} />
                         <ServicesH2>Yoga Mats</ServicesH2>
                         <ServicesP>The best yoga mats of 2022!</ServicesP>
-                        <LinkP to="/shop">Read More</LinkP>
+                        <LinkP to="/shop">Read More...</LinkP>
                     </ServicesCard>
 
                     <ServicesCard>
                         <ServicesIcon src={IconThree} />
                         <ServicesH2>Gym Equipment</ServicesH2>
                         <ServicesP>The newest pieces of workout equipment for your home or gym!</ServicesP>
-                        <LinkP to="/shop">Read More</LinkP>
+                        <LinkP to="/shop">Read More...</LinkP>
                     </ServicesCard>
                 </ServicesWrapper>
             </ServicesContainer>

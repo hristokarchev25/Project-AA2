@@ -24,21 +24,21 @@ const Gym = () => {
                         <ServicesIcon src={shopOne} />
                         <ServicesH2>Schwinn IC8 Indoor Cycle</ServicesH2>
                         <ServicesP>1400 BGN!</ServicesP>
-                        <LinkP to="#">Buy</LinkP>
+                        <LinkP to="/#">Buy</LinkP>
                     </ServicesCard>
 
                     <ServicesCard>
                         <ServicesIcon src={shopTwo} />
                         <ServicesH2>SP.IC20 Indoor Studio Cycle</ServicesH2>
                         <ServicesP>750 BGN!</ServicesP>
-                        <LinkP to="#">Buy</LinkP>
+                        <LinkP to="/#">Buy</LinkP>
                     </ServicesCard>
 
                     <ServicesCard>
                         <ServicesIcon src={shopThree} />
                         <ServicesH2>Taurus T9.9 Light Treadmill</ServicesH2>
                         <ServicesP>5000 BGN!</ServicesP>
-                        <LinkP to="#">Buy</LinkP>
+                        <LinkP to="/#">Buy</LinkP>
                     </ServicesCard>
                 </ServicesWrapper>
             </ServicesContainer>
