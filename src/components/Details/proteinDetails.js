@@ -57,7 +57,7 @@ function ProteinDetails() {
                                         dark2="true"
                                         target="_blank"
                                     >
-                                       Buy for {protein.price}
+                                        Buy for {protein.price}
                                     </BtnHref>
                                 </BtnWrap>
                                 <BtnWrap>
@@ -72,7 +72,7 @@ function ProteinDetails() {
                                         dark="true"
                                         dark2="true"
                                     >
-                                       Back
+                                        Back
                                     </BtnLink>
                                 </BtnWrap>
                             </TextWrapper>
