@@ -3,9 +3,9 @@ import Footer from '../components/Footer';
 import ShopNav from '../components/Navbar/shopNav';
 import ShopSidebar from '../components/Sidebar/ShopSidebar';
 import ScrollToTop from '../components/ScrollToTop';
-import Gym from '../components/Services/gym';
 import Proteins from '../components/Services/Proteins.jsx';
 import Mats from '../components/Services/Mats.jsx';
+import Gym from '../components/Services/Gym.jsx';
 
 import { auth } from '../utils/firebase';
 
