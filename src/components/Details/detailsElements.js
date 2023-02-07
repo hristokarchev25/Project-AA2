@@ -134,10 +134,30 @@ border-radius: 50px;
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
+
+    @media screen and (max-width: 1024px) {
+     display: flex;
+     justify-content: center;
+    }
+
+    @media screen and (max-width: 600px) {
+     display: flex;
+     justify-content: center;
+    }
 `;
 
 export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+
+    @media screen and (max-width: 1024px) {
+     width: 12rem;
+     margin: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+     width: 10rem;
+     margin: 0;
+    }
 `;
