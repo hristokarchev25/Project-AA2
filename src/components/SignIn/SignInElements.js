@@ -20,7 +20,7 @@ export const FormWrap = styled.div`
     justify-content: center;
 
     @media screen and (max-width: 400px) {
-        height: 80%;
+        height: 90%;
     }
 `;
 
@@ -60,6 +60,10 @@ export const Form = styled.form`
     padding: 80px 32px;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+
+    @media screen and (max-width: 1024px) {
+        max-width: 515px;
+    }
 
     @media screen and (max-width: 400px) {
         padding: 32px 32px;

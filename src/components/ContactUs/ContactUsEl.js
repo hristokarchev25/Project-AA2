@@ -18,10 +18,6 @@ export const FormWrap = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    @media screen and (max-width: 400px) {
-        height: 80%;
-    }
 `;
 
 export const Icon = styled(Link)`
@@ -60,6 +56,10 @@ export const Form = styled.form`
     padding: 80px 32px;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+
+    @media screen and (max-width: 1024px) {
+        max-width: 515px;
+    }
 
     @media screen and (max-width: 400px) {
         padding: 32px 32px;
@@ -103,6 +103,12 @@ export const FormButton = styled.button`
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+
+    &:hover {
+        transition: all 0.4s ease-in-out;
+        background: #fff;
+        color: black;
+    }
 `;
 
 export const Text = styled.span`
