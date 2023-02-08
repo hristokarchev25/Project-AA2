@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import Video from '../../videos/video3.mp4';
+import testImg from '../../images/test.png';
+
 import { Button } from '../ButtonElement';
 import {
     HeroContainer,
     HeroBG,
     VideoBG,
+    ImageBG,
     HeroContent,
     HeroH1,
     HeroP,
@@ -25,6 +28,7 @@ function HeroSection({ isAuth, email }) {
         <HeroContainer>
             <HeroBG>
                 <VideoBG autoPlay loop muted src={Video} type='video/mp4' />
+                <ImageBG  src={testImg}/>
             </HeroBG>
             <HeroContent>
                 <HeroH1>Tell The Vision</HeroH1>
