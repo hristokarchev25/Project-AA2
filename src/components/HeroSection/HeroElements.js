@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
-/* import testImg from '../../images/test.png'; */
 
 export const HeroContainer = styled.div`
     background: #0c0c0c;
@@ -47,27 +46,8 @@ export const VideoBG = styled.video`
     object-fit: cover;
     background: #232a34;
 
-    @media screen and (max-width: 700px) {
-        display: none;  
-    }
-
-    /* @media (max-aspect-ratio: 16/9) {
-        width: auto;
-        height: 100%;
-    }
-
-    @media screen and (max-width: 1024px) {
-        
-    } */
-
     /* @media screen and (max-width: 700px) {
-        display: none;
-
-        body {
-            background-image: url('../../images/test.png');
-            background-size: cover;
-        }
-        
+        display: none;  
     } */
 `;
 
