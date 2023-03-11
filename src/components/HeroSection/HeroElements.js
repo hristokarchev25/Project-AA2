@@ -47,9 +47,6 @@ export const VideoBG = styled.video`
     background: #232a34;
     pointer-events: none;
 
-    &::-webkit-media-controls {
-        display: none;
-    }
     /* @media screen and (max-width: 700px) {
         display: none;  
     } */
