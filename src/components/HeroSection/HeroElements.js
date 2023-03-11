@@ -45,6 +45,7 @@ export const VideoBG = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
+    pointer-events: none;
 
     /* @media screen and (max-width: 700px) {
         display: none;  
