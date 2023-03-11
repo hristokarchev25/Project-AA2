@@ -27,7 +27,7 @@ function HeroSection({ isAuth, email }) {
     return (
         <HeroContainer>
             <HeroBG>
-                <VideoBG autoPlay loop muted src={Video} type='video/mp4' />
+                <VideoBG autoPlay loop muted playsInline src={Video} type='video/mp4' />
                 {/* <ImageBG  src={testImg}/> */}
             </HeroBG>
             <HeroContent>
