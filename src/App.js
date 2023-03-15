@@ -13,6 +13,7 @@ import workoutsPage from './pages/workouts';
 import proteinDetailsPage from './pages/proteinDetailsPage';
 import matsDetailsPage from './pages/matsDetailsPage';
 import gymDetailsPage from './pages/gymDetailsPage';
+/* import searchWorkoutPage from './pages/searchWorkoutPage'; */
 import LoadingPage from './pages/loadingPage';
 
 import { auth } from './utils/firebase';
@@ -23,14 +24,18 @@ function App() {
   const [Loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setLoading(true), 2500);
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000);
   }, []);
 
 
   return (
 
     <>
-      {Loading === true ? (
+      {Loading ? (<LoadingPage />) : (
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/signin" component={SigninPage} exact />
@@ -43,13 +48,14 @@ function App() {
           <Route path="/shop/details/mats/:matId" component={matsDetailsPage} exact />
           <Route path="/shop/details/gym/:gymId" component={gymDetailsPage} exact />
           <Route path="/contactUs" component={contactUsPage} exact />
+          {/* <Route path="/searchWorkout" component={searchWorkoutPage} exact /> */}
           <Route path="/about" component={aboutPage} exact />
           <Route path="/logout" render={props => {
             auth.signOut();
             return <Redirect to="/" />
           }} />
         </Switch>
-      ) : (<LoadingPage />)}
+      )}
     </>
 
   );
