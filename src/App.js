@@ -13,7 +13,8 @@ import workoutsPage from './pages/workouts';
 import proteinDetailsPage from './pages/proteinDetailsPage';
 import matsDetailsPage from './pages/matsDetailsPage';
 import gymDetailsPage from './pages/gymDetailsPage';
-/* import searchWorkoutPage from './pages/searchWorkoutPage'; */
+import searchWorkoutPage from './pages/searchWorkoutPage';
+import ExercisesDetailsPage from './pages/exercisesDetailsPage';
 import LoadingPage from './pages/loadingPage';
 
 import { auth } from './utils/firebase';
@@ -48,7 +49,8 @@ function App() {
           <Route path="/shop/details/mats/:matId" component={matsDetailsPage} exact />
           <Route path="/shop/details/gym/:gymId" component={gymDetailsPage} exact />
           <Route path="/contactUs" component={contactUsPage} exact />
-          {/* <Route path="/searchWorkout" component={searchWorkoutPage} exact /> */}
+          <Route path="/searchWorkout" component={searchWorkoutPage} exact />
+          <Route path="/exercise/:id" component={ExercisesDetailsPage} exact />
           <Route path="/about" component={aboutPage} exact />
           <Route path="/logout" render={props => {
             auth.signOut();

@@ -91,6 +91,20 @@ export const NavLinks = styled(LinkScroll)`
     }
 `;
 
+export const NavLinksRouter = styled(LinkRouter)`
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+
+    &.active {
+        border-bottom: 4px solid #01bf71;
+    }
+`;
+
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
