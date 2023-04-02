@@ -37,11 +37,11 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           exerciseOptions
         );
       }
-
       setExercises(exercisesData);
     };
 
     fetchExercisesData();
+    // eslint-disable-next-line
   }, [bodyPart]);
 
   return (
