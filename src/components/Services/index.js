@@ -1,7 +1,7 @@
 import React from 'react';
 import IconOne from '../../images/shop.png';
 import IconTwo from '../../images/search.png';
-import IconThree from '../../images/gym.png';
+import IconThree from '../../images/bmiCalc.png';
 
 import {
     ServicesContainer,
@@ -37,9 +37,9 @@ const Services = () => {
 
                     <ServicesCard>
                         <ServicesIcon src={IconThree} />
-                        <ServicesH2>Gym Equipment</ServicesH2>
-                        <ServicesP>The newest pieces of workout equipment for your home or gym!</ServicesP>
-                        <LinkP to="/shop">Read More...</LinkP>
+                        <ServicesH2>BMI Calculator</ServicesH2>
+                        <ServicesP>Calculate your body mass index!</ServicesP>
+                        <LinkP to="/bmiCalculator">Read More...</LinkP>
                     </ServicesCard>
                 </ServicesWrapper>
             </ServicesContainer>
