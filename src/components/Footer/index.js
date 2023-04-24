@@ -39,7 +39,7 @@ const Footer = () => {
                                 <FooterLink to="/bmiCalculator">BMI Calculator</FooterLink>
                                 <FooterLink to="/workouts">Workouts</FooterLink>
                                 <FooterLink to="/workouts">Diets</FooterLink>
-                                <FooterLink to="/">Home</FooterLink>
+                                <FooterLink to="/searchWorkout">The Exercise Library</FooterLink>
                             </FooterLinkItems>
 
                             <FooterLinkItems>
@@ -65,7 +65,7 @@ const Footer = () => {
                             <FooterLinkItems>
                                 <FooterLinkTitle>Useful links</FooterLinkTitle>
                                 <FooterHref
-                                    href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-benefits-of-yoga"
+                                    href="https://osteopathic.org/what-is-osteopathic-medicine/benefits-of-yoga/"
                                     target="_blank">Benefits of yoga</FooterHref>
                                 <FooterHref href="https://www.webmd.com/balance/stress-management/stress-relief-breathing-techniques"
                                     target="_blank">Breathing</FooterHref>
